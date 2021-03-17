@@ -1,0 +1,12 @@
+Image index: 1.jpg
+Detected text: SBR8167
+Detected text: SBR8167
+Image index: 4.jpg
+Detected text: YHI9 OTZ
+Detected text: YHI9
+Detected text: OTZ
+Image index: 7.jpg
+Detected text: LP 610 LB
+Detected text: LP
+Detected text: 610
+Detected text: LB
