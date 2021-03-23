@@ -11,8 +11,8 @@ public class SQSmsg
 {
     private static final String QUEUE_NAME = "Emad-CS634-SQS.fifo" + new Date().getTime();
     final static AmazonSQS sqs = AmazonSQSClientBuilder.defaultClient();
-    final static String queueUrl = "https://sqs.us-east-1.amazonaws.com/685598371878/Emad-CS634-SQS.fifo";
-    //final static String queueUrl = "https://sqs.us-east-1.amazonaws.com/125764523568/Emad-CS643-SQS.fifo";
+    //final static String queueUrl = "https://sqs.us-east-1.amazonaws.com/685598371878/Emad-CS634-SQS.fifo";
+    final static String queueUrl = "https://sqs.us-east-1.amazonaws.com/125764523568/Emad-CS643-SQS.fifo";
 
     public static void sendSQS(String string)
     {

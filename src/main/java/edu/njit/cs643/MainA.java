@@ -33,8 +33,10 @@ public class MainA {
 					}
 				}
 			}
-
+			
+		
 		}
+		SQSmsg.sendSQS("-1");	
 		System.out.println(carList.size() + " " + carList.toString());
 	}
 

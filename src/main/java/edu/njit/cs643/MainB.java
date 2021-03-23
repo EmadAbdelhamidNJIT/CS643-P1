@@ -21,7 +21,11 @@ public class MainB {
 		List<Message> carList = SQSmsg.receiveSQS();
 		System.out.println(carList.size());
 		for (Message message : carList) {
-			
+			System.out.println("***" + message.getBody().toString());
+			if (message.getBody().toString().equals("-1")) {
+				System.out.println("end of input");
+			}
+			else {
 			
 			List<TextDetection> textDetections = DetectText.detectText(message.getBody().toString());
 			if (textDetections.size() > 0) {
@@ -38,6 +42,7 @@ public class MainB {
 					bw.newLine();
 
 				} 
+			}
 			}
 		}
 		bw.close();
